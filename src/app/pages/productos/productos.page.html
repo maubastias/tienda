@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Mantenedor de productos</h1>
+  <form [formGroup]="producto" (ngSubmit)="add()">
+    <ion-label>ID:</ion-label>
+    <ion-input formControlName="identificador"></ion-input>
+    <ion-label>NOMBRE:</ion-label>
+    <ion-input formControlName="nombre"></ion-input>
+    <ion-label>PRECIO:</ion-label>
+    <ion-input formControlName="precio"></ion-input>
+    <ion-button type="submit">Agregar producto</ion-button>
+    <ion-button routerLink="/lista-productos">LISTA DE PRODUCTOS</ion-button>
+  </form>
+</ion-content>
